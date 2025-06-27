@@ -1,0 +1,73 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("kanto_pokemon_background.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+section {
+  padding: 60px 20px;
+  background-color: transparent;
+}
+
+.project-card {
+  width: 320px;
+  height: 480px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.18);
+  background: #f8f9fa;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  border-bottom: 2px solid #d1d1d1;
+  padding-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container, .types-container {
+  flex: 1 1 50%; /* each takes half the rest of the card */
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  height: 20%;
+  border: 3px solid #bbb;
+  border-radius: 12px;
+  background: white;
+  margin: 0.5rem;
+  padding: 0;
+}
+
+.pokemon-image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.types-container {
+  font-weight: 600;
+  color: #555;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
